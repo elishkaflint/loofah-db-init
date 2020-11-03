@@ -7,10 +7,10 @@ require 'json'
     :category => ["_id", "title", "description"],
     :craft => ["_id", "title", "description", "leads", "slackChannels", "devServicesPage"],
     :grade => ["_id", "title", "description", "hrCode"],
-    :skill => ["gradeId", "categoryId", "title", "description"]
+    :skill => ["gradeId", "craftIds", "categoryId", "title", "description"]
 }
 
-@array_fields = ["leads", "slackChannels"]
+@array_fields = ["leads", "slackChannels", "craftIds"]
 
 @files.each do |filename, columns|
 
