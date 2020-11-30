@@ -4,13 +4,13 @@ require 'csv'
 require 'json'
 
 @files = {
-    :category => ["_id", "title", "description"],
-    :craft => ["_id", "title", "description", "leads", "slackChannels", "devServicesPage"],
-    :grade => ["_id", "title", "description", "hrCode"],
-    :skill => ["gradeId", "craftIds", "categoryId", "title", "description"]
+    :category => ["title", "description"],
+    :craft => ["title", "description", "leads", "slackChannels", "devServicesPage"],
+    :grade => ["title", "description", "hrCode"],
+    :skill => ["gradeTitle", "craftTitles", "categoryTitle", "title", "description"]
 }
 
-@array_fields = ["leads", "slackChannels", "craftIds"]
+@array_fields = ["leads", "slackChannels", "craftTitles"]
 
 @files.each do |filename, columns|
 
