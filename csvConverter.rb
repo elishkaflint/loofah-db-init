@@ -7,7 +7,7 @@ require 'json'
     :category => ["title", "description"],
     :craft => ["title", "description", "leads", "slackChannels", "devServicesPage"],
     :grade => ["title", "description", "hrCode"],
-    :skill => ["gradeTitle", "craftTitles", "categoryTitle", "topic", "description"]
+    :skill => ["gradeTitle", "craftTitles", "categoryTitle", "description"]
 }
 
 @array_fields = ["leads", "slackChannels", "craftTitles"]
