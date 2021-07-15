@@ -1,6 +1,4 @@
-FROM mongo
-
-RUN apt-get update && apt-get install -y ruby
+FROM mongo:latest
 
 WORKDIR /usr/src/app
 
